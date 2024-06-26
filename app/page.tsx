@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Home() {
   const [prompt, setPrompt] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Prompt submitted: ", prompt);
   };
